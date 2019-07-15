@@ -57,11 +57,11 @@
 
 .content.staff>.block>.head>.inner{
     transition: all 1.5s ease 0s;
-    border: solid 1pt rgb(40, 40, 40);
+    border: solid 0.4pt rgb(40, 40, 40);
     color: rgb(40, 40, 40);
 }
 
 .content.staff.active>.block>.head>.inner{
     color: rgb(0, 220, 200);
-    border: solid 1pt rgb(0, 220, 200);
+    border: solid 0.4pt rgb(0, 220, 200);
 }
