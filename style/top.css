@@ -1,0 +1,265 @@
+﻿@charset "utf-8";
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 8pt 3%;
+    width: 94%;
+    height: 400pt;
+    background: url('../image/header.jpg');
+    background-size: cover;
+}
+
+.header>.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0 12pt;
+    max-width: 1200pt;
+    width: 100%;
+    height: 100%;
+    background: url('../image/logotype.png');
+    background-repeat: no-repeat;
+    background-size: 240pt;
+    background-position: center;
+}
+
+.header>.wrapper>.news{
+    margin: 0 0 4pt 4pt;
+    padding: 2pt 4pt;
+    color: rgb(235, 235, 235);
+    border-left: solid 1pt rgb(235, 235, 235);
+}
+
+.header>.wrapper>.news>.date{
+    margin: 0 0 2pt 0;
+    font-size: 6.4pt;
+}
+
+.header>.wrapper>.news>.text{
+    width: 160pt;
+    height: 12pt;
+    font-size: 8pt;
+}
+
+.header>.wrapper>.download{
+    margin: 4pt 0 0 0;
+    padding: 2pt 8pt;
+    width: 160pt;
+    height: 12pt;
+    background: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    font-size: 8pt;
+    text-decoration: none;
+    border-radius: 8pt/8pt;
+}
+
+.header>.wrapper>.download>.figure{
+    margin: 0 4pt 0 0;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 3%;
+    max-width: 1200pt;
+    width: 94%;
+}
+
+.content>.head{
+    margin: 0 0 8pt 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content>.head>.inner{
+    display: inline-block;
+    width: 48pt;
+    border-bottom: solid 1pt rgb(40, 40, 40);
+}
+
+.content.about{
+    margin: 32pt 0 16pt 0;
+}
+
+.content.about>.block{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8pt 12pt 32pt 12pt;
+    min-width: 200pt;
+    max-width: 320pt;
+    width: 24%;
+}
+
+.content.about>.block--heightless{
+    flex-grow: 1;
+    margin: 0 12pt 0 12pt;
+    min-width: 200pt;
+    max-width: 320pt;
+    width: 24%;
+
+}
+
+.content.about>.block>.figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4pt 0;
+    width: 40pt;
+    height: 40pt;
+    font-size: 32pt;
+}
+
+.content.about>.block>.lead{
+    display: flex;
+    align-items: center;
+    margin: 0 0 8pt 0;
+    padding: 0 12pt;
+    color: rgb(0, 220, 200);
+}
+
+.content.about>.block>.lead::before{
+    content: '〈';
+    font-size: 16pt;
+}
+
+.content.about>.block>.lead::after{
+    content: '〉';
+    font-size: 16pt;
+}
+
+.content.about>.block>.text{
+    width: 100%;
+    text-align: justify;
+}
+
+.content.work{
+    margin: 32pt 0 40pt 0;
+}
+
+.content.work>.head{
+    margin: 0 0 16pt 0;
+}
+
+.content.work>.wrapper{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8pt 12pt;
+    min-width: 200pt;
+    width: 200pt;
+}
+
+.content.work>.wrapper>.image{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.content.work>.wrapper>.image.sport-fes{
+    flex-grow: 1;
+    height: 240pt;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(60, 40, 40, 0.4)), url('../image/sport-fes.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.content.work>.wrapper>.image.athletic-fes{
+    width: 100%;
+    height: 144pt;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(60, 40, 40, 0.4)), url('../image/athletic-fes.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.content.work>.wrapper>.image.congress{
+    flex-grow: 2;
+    margin: 16pt 4pt 0 0;
+    height: 80pt;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(60, 40, 40, 0.4)), url('../image/congress.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.content.work>.wrapper>.image.cultural-fes{
+    flex-grow: 1;
+    margin: 16pt 0 0 4pt;
+    height: 80pt;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(60, 40, 40, 0.4)), url('../image/cultural-fes.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.content.work>.wrapper>.image>.lead{
+    margin: 4pt 8pt;
+    padding: 2pt 0 2pt 4pt;
+    width: 60pt;
+    height: 12pt;
+    color: rgb(255, 255, 255);
+    font-size: 8pt;
+    border-left: solid 1pt rgb(255, 255, 255);
+}
+
+.content.staff{
+    padding: 0;
+    margin: 32pt 0 16pt 0;
+    width: 100%;
+}
+
+.content.staff>.block{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 16pt 6% 32pt 6%;
+    width: 176pt;
+}
+
+.content.staff>.block>.head{
+    margin: 0 0 8pt 0;
+    width: 100%;
+    height: 16pt;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.content.staff>.block>.head>.inner{
+    display: inline-block;
+    padding: 2pt 16pt 2pt 16pt;
+    height: 12pt;
+    border-radius: 8pt/8pt;
+}
+
+.content.staff>.block>.text{
+    display: flex;
+    flex-direction: column;
+    margin: 0 8pt 6pt 8pt;
+    width: 72pt;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32pt 0 0 0;
+    padding: 0 0 4pt 0;
+    width: 100%;
+    background: rgb(40, 40, 40);
+    color: rgb(235, 235, 235);
+    font-size: 8pt;
+}
+
+.footer>.wrapper{
+    margin: 12pt 0 16pt 0;
+    font-size: 12pt;
+}
+
+.footer>.wrapper>.figure{
+    margin: 0 20pt;
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+}

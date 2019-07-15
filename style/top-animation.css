@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+
+
+.header>.wrapper>.news{
+    transition: all 1s ease 0s;
+    opacity: 0;
+    transform: translateY(2pt);
+}
+
+.header.active>.wrapper>.news{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content{
+    transition: all 1s ease 0s;
+    opacity: 0;
+    transform: translateY(16pt);
+}
+
+.content.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content>.head>.inner{
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+    padding: 2pt 0pt;
+    height: 0;
+    opacity: 0;
+    transform: translateY(16pt);
+}
+
+.content.active>.head>.inner{
+    padding: 2pt 32pt;
+    height: 20pt;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content.about.active>.block>.lead::before{
+    transition: all 1s ease 0s;
+}
+
+.content.about.active>.block>.lead::after{
+    transition: all 1s ease 0s;
+}
+
+.content.about.active>.block>.lead::before{
+    margin: 0 12pt 0 0;
+}
+
+.content.about.active>.block>.lead::after{
+    margin: 0 0 0 12pt;
+}
+
+.content.staff>.block>.head>.inner{
+    transition: all 1.5s ease 0s;
+    border: solid 1pt rgb(40, 40, 40);
+    color: rgb(40, 40, 40);
+}
+
+.content.staff.active>.block>.head>.inner{
+    color: rgb(0, 220, 200);
+    border: solid 1pt rgb(0, 220, 200);
+}
