@@ -3,21 +3,76 @@
 
 .header{
     display: flex;
-    justify-content: flex-end;
     align-items: flex-start;
-    padding: 8pt 3%;
-    width: 94%;
-    height: 480pt;
-    background: url('../image/logotype.png'), url('../image/header.jpg');
-    background-size: 240pt, cover;
+    width: 100%;
+    height: 600pt;
+    background: url('../image/header.jpg');
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat, repeat;
+}
+
+.header>.nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-bottom: solid 2pt rgb(40, 40, 40);
+}
+
+.header>.nav>.inner{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 1200pt;
+    padding: 0 4%;
+}
+
+.header>.nav>.inner>.image.logotype{
+    flex: 1 0;
+}
+
+.header>.nav>.inner>.image.logotype>.inner{
+    height: 64pt;
+}
+
+.header>.nav>.inner>.button{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 48pt;
+    font-size: 16pt;
+}
+
+.header>.nav>.inner>.wrapper{
+    flex: 0 1 240pt;
+    display: flex;
+    justify-content: center;
+    padding: 4pt 0 0 0;
+    height: 60pt;
+}
+
+.header>.nav>.inner>.wrapper>.button{
+    flex: 0 1 80pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+@media (max-width: 640pt){
+    .header>.nav>.inner>.button.open{
+        display: flex;
+    }
+    .header>.nav>.inner>.wrapper{
+        display: none;
+    }
 }
 
 .content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 48pt 0 0 0;
     width: 100%;
 }
 
@@ -33,7 +88,7 @@
 }
 
 .content.topic{
-    margin: 48pt 0 48pt 0;
+    margin: 0 0 48pt 0;
     max-width: 800pt;
 }
 
@@ -110,7 +165,7 @@
 }
 
 .content.about{
-    margin: 48pt 0 8pt 0;
+    margin: 0 0 8pt 0;
 }
 
 .content.about>.head{
@@ -227,6 +282,12 @@
     width: 100%;
 }
 
+.content.about>.wrapper>.image>.block>.lead::before{
+    content: attr(data-count);
+    margin: 0 12pt 0 0;
+    font-size: 16pt;
+}
+
 .content.about>.wrapper>.image>.block>.text{
     width: 100%;
     text-align: justify;
@@ -237,8 +298,7 @@
 }
 
 .content.staff{
-    padding: 0;
-    margin: 32pt 0 2pt 0;
+    margin: 0 0 2pt 0;
     max-width: 800pt;
     width: 100%;
 }
@@ -291,7 +351,7 @@
 }
 
 .footer>.wrapper{
-    margin: 12pt 0 16pt 0;
+    margin: 32pt 0 16pt 0;
     font-size: 12pt;
 }
 

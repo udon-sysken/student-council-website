@@ -1,6 +1,19 @@
 ﻿@charset "utf-8";
 
 
+.header.open>.nav>.inner>.button.open{
+    display: none;
+}
+
+.header.open>.nav>.inner>.button.close{
+    display: flex;
+}
+
+.header.open>.nav>.inner>.wrapper{
+    flex: 1 1 100%;
+    display: flex;
+}
+
 .content, .content .wrapper, .content .block{
     transition: all 1s ease 0s;
     opacity: 0;

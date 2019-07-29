@@ -19,6 +19,20 @@
     </head>
     <body>
         <header class="header">
+            <nav class="nav">
+                <div class="inner">
+                    <div class="image logotype">
+                        <img class="inner" src="./image/logotype.png">
+                    </div>
+                    <a class="button open" onclick="open_menu();"><i class="fas fa-bars"></i></a>
+                    <a class="button close" onclick="close_menu();"><i class="fas fa-times"></i></i></a>
+                    <div class="wrapper">
+                        <a class="button" onclick="content_scroll('topic')">topic</a>
+                        <a class="button" onclick="content_scroll('about')">about</a>
+                        <a class="button" onclick="content_scroll('staff')">staff</a>
+                    </div>
+                </div>
+            </nav>
         </header>
         <article class="content topic">
             <h1 class="head"><span class="inner">topic</span></h1>
@@ -63,7 +77,7 @@
             <div class="wrapper congress">
                 <div class="image">
                     <div class="block">
-                        <h2 class="lead">1.　学生のための学校作り</h2>
+                        <h2 class="lead" data-count="1.">学生のための学校作り</h2>
                         <p class="text">
                             学生会は，学校と学生の橋渡し。学生から寄せられた意見を学校に伝えたり，また学校の意見を学生に伝えたりするのが主な仕事です。
                             他にも監査委員会と部活動予算を審議したり，皆楽祭執行委員会と話し合ったり，様々な組織と連携を図っています。
@@ -74,7 +88,7 @@
             <div class="wrapper sport-fes">
                 <div class="image">
                     <div class="block">
-                        <h2 class="lead">2.　イベントの企画･運営</h2>
+                        <h2 class="lead" data-count="2.">イベントの企画･運営</h2>
                         <p class="text">
                             スポーツ大会や秋季体育祭をはじめ，各行事の企画運営に携わったり，役員選挙では選挙管理委員会としての役割を担ったりするのも学生会の仕事です。
                             他にも各部活動の統率を図るなど，学校生活が楽しく，充実したものになるよう活動しています。
@@ -85,7 +99,7 @@
             <div class="wrapper cultural-fes">
                 <div class="image">
                     <div class="block">
-                        <h2 class="lead">3.　他高専との交流</h2>
+                        <h2 class="lead" data-count="3.">他高専との交流</h2>
                         <p class="text">
                             学生会は学生の代表として，他高専とも交流しています。
                             特に，総合文化祭では運営として参加するだけでなく，学校紹介ビデオを制作するなど，PR活動も精力的に行っています。

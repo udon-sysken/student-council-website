@@ -1,36 +1,27 @@
 ﻿@charset "utf-8";
-
+*{
+    margin: 0;
+}
 
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
     min-width: 240pt;
     color: rgb(40, 40, 40);
     font: 10pt 'Lato', 'Noto Sans JP', sans-serif;
 }
 
 h1{
-    margin: 0;
     font-size: 16pt;
 }
 
 h2{
-    margin: 0;
     font-size: 12pt;
 }
 
 small{
     font-size: 6.4pt;
-}
-
-p{
-    margin: 0;
-}
-
-dl, dt, dd{
-    margin: 0;
 }
 
 a{
